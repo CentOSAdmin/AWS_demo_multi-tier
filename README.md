@@ -1,11 +1,11 @@
-# three-tier-arch-aws-terraform
-Provision three tier architecture on AWS using Terraform
-go the working directory containing terraform configuration files
-perform the following command
+# three-tier-arch-aws-terraform.
+Provision three tier architecture on AWS using Terraform.
+go the working directory containing terraform configuration files.
+perform the following command.
 terraform init
-this will download the modules
-it will initialize the backend S3 and terraform has been initialized
-then perform the following terraform command
+this will download the modules.
+it will initialize the backend S3 and terraform has been initialized.
+then perform the following terraform command.
 terraform plan
 this provides a preview the expected changes the terraform plans to execute.
 When terraform performs a plan, it reads the remote state of the objects to be executed. To make sure that the terraform state is up to date.
