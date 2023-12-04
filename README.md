@@ -4,16 +4,19 @@
 This repository contains Terraform configuration files to set up a multi-tier architecture on AWS, including a VPC, database, and compute resources. The infrastructure consists of public-facing web servers, private application servers, and a MySQL database in separate subnets for better security and isolation.
 
 **Architecture Overview**<br>
-VPC with public, private, and database subnets
-Application Load Balancer (ALB) for web and app tiers
-Auto Scaling Groups (ASG) for web and app tiers
-MySQL RDS instance for database tier
-Security groups to control traffic between the tiers
+- VPC with public, private, and database subnets
+- Application Load Balancer (ALB) for web and app tiers
+- Auto Scaling Groups (ASG) for web and app tiers
+- MySQL RDS instance for database tier
+- Security groups to control traffic between the tiers
+- S3 bucket for backup and logs
+
 
 **Prerequisites**<br>
 An AWS account with appropriate permissions
-Terraform v1.0.0 or later
-AWS CLI v2.0.0 or later
+- Terraform v1.0.0 or later
+- AWS CLI v2.0.0 or later
+
 
 **Configuration**<br>
 main.tf<br>
@@ -46,5 +49,4 @@ terraform apply
 To destroy the infrastructure, run:<br>
 terraform destroy
 
-**Contributing**<br>
-Feel free to submit pull requests for any improvements or bug fixes. Please ensure that your changes are well-tested and documented.
+
